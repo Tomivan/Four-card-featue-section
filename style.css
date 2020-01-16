@@ -49,6 +49,7 @@ p{
 }
 .content{
     padding: 10px;
+    position: relative;
 }
 .color-1{
     background-color:#44d3d2;
@@ -73,7 +74,39 @@ p{
 .icon{
     justify-content: flex-end;
 }
+img{
+    display: block;
+    position: relative; 
+    left: 70%;
+}
 footer {
     position: absolute;
     bottom: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 415px) {
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        border: 1px solid white;
+        border-radius: 4px;
+        box-shadow: 0 2px 16px 0 #eae5e5;
+        height: 30vh;
+        width: 75vw;
+        margin-left: -120px;
+    }
+    .group-1{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .group-3{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    footer{
+        position: relative;
+        bottom: 0;
+    }
 }
